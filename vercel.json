@@ -2,7 +2,7 @@
   "functions": {
     "绝对完美.py": {
       "runtime": "@vercel/python@3.12",
-      "maxDuration": 60  // 最长运行时间60秒
+      "maxDuration": 60 
     }
   },
   "routes": [
