@@ -1,13 +1,13 @@
 {
-  "builds": [
-    {
-      "src": "绝对完美.py",
-      "use": "@vercel/python"
+  "functions": {
+    "绝对完美.py": {
+      "runtime": "@vercel/python@3.12",
+      "maxDuration": 60  // 最长运行时间60秒
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/run",
       "dest": "绝对完美.py"
     }
   ]
